@@ -1,11 +1,11 @@
-About r-daff
-============
+About r-daff-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-daff-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/edwindj/daff
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-daff-feedstock/blob/main/LICENSE.txt)
 
 Summary: Diff, patch and merge for data frames. Document changes in data sets and use them to apply patches. Changes to data can be made visible by using render_diff. The V8 package is used to wrap the 'daff.js' JavaScript library which is included in the package.
 
