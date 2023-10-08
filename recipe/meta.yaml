@@ -1,4 +1,4 @@
-{% set version = '0.3.5' %}
+{% set version = "1.0.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/daff_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/daff/daff_{{ version }}.tar.gz
-  sha256: d2ebc6c9ad891c5956593099d799c20dda9fc00ea76c9f6a1ff7d412846bec03
+  sha256: a768fd12359fce0186a0021760db118a6943bb1adfe31d30f65d3aa864443152
 
 build:
-  merge_build_host: True  # [win]
-  number: 4
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,10 +40,7 @@ test:
 about:
   home: http://github.com/edwindj/daff
   license: MIT
-  summary: Diff, patch and merge for data frames. Document changes in data sets and use them
-    to apply patches. Changes to data can be made visible by using render_diff. The
-    V8 package is used to wrap the 'daff.js' JavaScript library which is included in
-    the package.
+  summary: Diff, patch and merge for data frames. Document changes in data sets and use them to apply patches. Changes to data can be made visible by using render_diff. The V8 package is used to wrap the 'daff.js' JavaScript library which is included in the package.
   license_family: MIT
   license_file: LICENSE
 
