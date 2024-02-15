@@ -1,4 +1,4 @@
-{% set version = "1.0.1" %}
+{% set version = "1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/daff_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/daff/daff_{{ version }}.tar.gz
-  sha256: a768fd12359fce0186a0021760db118a6943bb1adfe31d30f65d3aa864443152
+  sha256: 84f5c55bfca066ea28ea4d507f662be4b8c4bf90624cf767920464d1ce1d707d
 
 build:
   merge_build_host: true  # [win]
