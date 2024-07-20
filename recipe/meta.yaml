@@ -1,6 +1,5 @@
 {% set version = "1.1.1" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-daff
@@ -13,8 +12,7 @@ source:
   sha256: 84f5c55bfca066ea28ea4d507f662be4b8c4bf90624cf767920464d1ce1d707d
 
 build:
-  merge_build_host: true  # [win]
-  number: 0
+  number: 1
   noarch: generic
   rpaths:
     - lib/R/lib/
